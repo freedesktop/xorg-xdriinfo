@@ -22,7 +22,7 @@ bin_PROGRAMS = xdriinfo
 
 xdriinfo_CFLAGS = $(XDRIINFO_CFLAGS)
 # mesa should really use pkg-config ...
-xdriinfo_LDADD = $(XDRIINFO_LIBS) -lGL
+xdriinfo_LDADD = $(XDRIINFO_LIBS)
 
 xdriinfo_SOURCES =	\
         xdriinfo.c
