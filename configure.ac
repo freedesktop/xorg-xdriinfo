@@ -38,9 +38,6 @@ AC_SUBST(XDRIINFO_CFLAGS)
 AC_SUBST(XDRIINFO_LIBS)
 
 # Checks for non-pkg-config packages (Mesa or vendor OpenGL)
-AC_CHECK_HEADER([GL/glx.h], [], 
- 	AC_MSG_FAILURE([cannot find GL/glx.h - make sure Mesa or other OpenGL package is installed]))
-
 AC_SEARCH_LIBS([glXGetProcAddress], [GL], [],
 	AC_MSG_FAILURE([cannot find GL library - make sure Mesa or other OpenGL package is installed]),
 	[$XDRIINFO_LIBS])
