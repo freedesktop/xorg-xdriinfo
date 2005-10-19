@@ -1,5 +1,10 @@
 2005-10-18  Kevin E. Martin  <kem-at-freedesktop-dot-org>
 
+	* configure.ac:
+	Update package version number for RC1 release.
+
+2005-10-18  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+
 	* configure.ac: Remove check for gl/glx.h as that fails when
 	installing Mesa in a non-standard directory and causes the build
 	script to exit.
