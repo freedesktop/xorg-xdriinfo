@@ -1,3 +1,10 @@
+2006-01-13  Matthias Hopf  <mhopf@suse.de>
+
+	* configure.ac:
+	Using glXGetProcAddressARB instead of glXGetProcAddress.
+	* xdriinfo.c: (main):
+	Casting to GLubyte* to remove warning.
+
 2005-12-14  Kevin E. Martin  <kem-at-freedesktop-dot-org>
 
 	* configure.ac:

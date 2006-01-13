@@ -58,8 +58,8 @@ int main (int argc, char *argv[]) {
     char *funcArg = NULL;
     char *dpyName = NULL;
 
-    GetScreenDriver = (glXGetScreenDriver_t *)glXGetProcAddressARB ("glXGetScreenDriver");
-    GetDriverConfig = (glXGetDriverConfig_t *)glXGetProcAddressARB ("glXGetDriverConfig");
+    GetScreenDriver = (glXGetScreenDriver_t *)glXGetProcAddressARB ((const GLubyte *)"glXGetScreenDriver");
+    GetDriverConfig = (glXGetDriverConfig_t *)glXGetProcAddressARB ((const GLubyte *)"glXGetDriverConfig");
     if (!GetScreenDriver || !GetDriverConfig) {
 	fprintf (stderr, "libGL is too old.\n");
 	return 1;
