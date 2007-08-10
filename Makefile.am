@@ -20,7 +20,7 @@
 
 bin_PROGRAMS = xdriinfo
 
-xdriinfo_CFLAGS = $(XDRIINFO_CFLAGS)
+AM_CFLAGS = $(XDRIINFO_CFLAGS)
 # mesa should really use pkg-config ...
 xdriinfo_LDADD = $(XDRIINFO_LIBS)
 
