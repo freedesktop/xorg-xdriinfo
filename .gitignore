@@ -18,3 +18,7 @@ stamp-h1
 xdriinfo
 xdriinfo.1
 *~
+*.o
+xdriinfo-*.tar.*
+ChangeLog
+tags
