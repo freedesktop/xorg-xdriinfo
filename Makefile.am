@@ -20,7 +20,7 @@
 
 bin_PROGRAMS = xdriinfo
 
-AM_CFLAGS = $(XDRIINFO_CFLAGS)
+AM_CFLAGS = $(CWARNFLAGS) $(XDRIINFO_CFLAGS)
 # mesa should really use pkg-config ...
 xdriinfo_LDADD = $(XDRIINFO_LIBS)
 
@@ -67,4 +67,4 @@ MAN_SUBSTS = \
 SUFFIXES = .$(APP_MAN_SUFFIX) .man
 
 .man.$(APP_MAN_SUFFIX):
-	sed $(MAN_SUBSTS) < $< > $@
+	$(AM_V_GEN)$(SED) $(MAN_SUBSTS) < $< > $@
