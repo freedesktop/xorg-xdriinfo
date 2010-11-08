@@ -32,17 +32,10 @@ XORG_MACROS_VERSION(1.8)
 
 AM_CONFIG_HEADER(config.h)
 
-AC_PROG_CC
-AC_PROG_INSTALL
-
-AC_TYPE_SIGNAL
-
 XORG_DEFAULT_OPTIONS
 
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(XDRIINFO, x11 glproto)
-AC_SUBST(XDRIINFO_CFLAGS)
-AC_SUBST(XDRIINFO_LIBS)
 
 # Checks for non-pkg-config packages (Mesa or vendor OpenGL)
 AC_SEARCH_LIBS([glXGetProcAddressARB], [GL], [],
