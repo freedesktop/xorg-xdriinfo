@@ -4,11 +4,19 @@
 xdriinfo \- query configuration information of DRI drivers
 .SH SYNOPSIS
 .B xdriinfo
-[\-display \fIdisplayname\fP] [command]
+[\-display \fIdisplayname\fP] [-version] [command]
 .SH DESCRIPTION
 \fIxdriinfo\fP can be used to query configuration information of
 direct rendering drivers. If no command argument is specified it lists
 the names of the direct rendering drivers for all screens.
+.PP
+Valid options are:
+.TP
+.B -display
+Specifies X server to connect to.
+.TP
+.B -version
+Print the program version and exit.
 .PP
 Valid commands are:
 .TP
