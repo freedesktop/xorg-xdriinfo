@@ -80,11 +80,15 @@ int main (int argc, char *argv[]) {
 	    func = OPTIONS;
 	    argPtr = &funcArg;
 	} else {
+	    fprintf (stderr, "%s: unrecognized argument '%s'\n",
+		     argv[0], argv[i]);
 	    printUsage ();
 	    return 1;
 	}
 	if (argPtr) {
 	    if (++i == argc) {
+		fprintf (stderr, "%s: '%s' requires an argument\n",
+			 argv[0], argv[i-1]);
 		printUsage ();
 		return 1;
 	    }
